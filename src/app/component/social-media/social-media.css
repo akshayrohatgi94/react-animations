@@ -1,0 +1,58 @@
+.icon-container {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container span {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.icon-container:hover span {
+  z-index: 1000;
+  background-color: rgb(104, 99, 99);
+  transition: 0.3s;
+}
+
+.icon-container:hover .layer1 {
+  transform: translate(0px, 0px);
+  opacity: 0.2;
+}
+.layer2 {
+  transform: translate(10px, -10px);
+  opacity: 0.4;
+}
+.layer3 {
+  transform: translate(20px, -20px);
+  opacity: 0.6;
+}
+.layer4 {
+  transform: translate(30px, -30px);
+  opacity: 0.8;
+}
+.icon-container:hover .media-icon-layer {
+  transform: translate(40px, -40px);
+  opacity: 1;
+}
+
+.media-icon-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.media-icon-layer img {
+  width: 60px;
+  height: 60px;
+}
+
+.media-icon-layer:hover {
+  transform: translateZ(100px);
+}

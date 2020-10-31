@@ -1,0 +1,13 @@
+.media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background-color: #222;
+}
+
+.media-list {
+  display: flex;
+  transform: rotateX(60deg) rotateZ(-30deg);
+}
